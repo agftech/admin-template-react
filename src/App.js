@@ -1,9 +1,17 @@
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div className="App">
-        <h1>Practical Project - Template for Administration Panel</h1>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
