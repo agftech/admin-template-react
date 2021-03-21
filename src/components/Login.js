@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import useClass from './../hooks/add-class-body'
 
 import {
   Button,
@@ -14,8 +13,11 @@ import {
   Row,
 } from "reactstrap";
 
-export default class Login extends Component {
-  render() {
+const Login = () => {
+    useClass('bg-blue')
+    const handleLogin = () => {
+        console.log('Make http request here....')
+    }    
     return (
       <div className="login mt-5 flex-row align-items-center">
         <Container>
@@ -38,7 +40,7 @@ export default class Login extends Component {
                       />
                     </FormGroup>
                     <FormGroup>
-                      <Button outline color="primary">
+                      <Button outline color="primary" onClick={handleLogin}>
                         Go!
                       </Button>
                     </FormGroup>
@@ -47,9 +49,9 @@ export default class Login extends Component {
               </Card>
             </Col>
           </Row>
-          <Link to="">Back Home!</Link>
         </Container>
       </div>
     );
-  }
 }
+
+export default Login;
