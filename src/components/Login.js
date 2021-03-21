@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import useClass from './../hooks/add-class-body'
 
 import {
@@ -44,6 +45,16 @@ const Login = () => {
                         Go!
                       </Button>
                     </FormGroup>
+                    <FormGroup>
+	                    <Link to="forgot">
+	                        <Button color="link">
+	                            Forgot Password?
+	                        </Button>
+	                    </Link>
+	                    <span>
+	                       	New? <Link to="/register">Sign-up</Link>
+	                     </span>
+                    </FormGroup>                   
                   </Form>
                 </CardBody>
               </Card>

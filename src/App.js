@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "./components/Home";
 import Login from "./components/Login";
+import Forgot from './components/Forgot';
 import NotFound from './components/NotFound';
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
         <Route exact path="/login">
           <Login />
         </Route>
+        <Route exact path="/forgot">
+          <Forgot />  
+        </Route>         
         <Route path="*">
           <NotFound />
         </Route>        
