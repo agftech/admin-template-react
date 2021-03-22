@@ -2,7 +2,7 @@ import React from 'react';
 import ReactBodyMovin from 'react-bodymovin';
 import NotFoundAnimation from './../404.json';
 
-const NotFound = () => {
+const NotFound = (props) => {
     const bodyMovinOptions = {
         loop: true,
         autoplay: true,

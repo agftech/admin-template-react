@@ -11,21 +11,11 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/login">
-          <Login />
-        </Route>
-        <Route exact path="/forgot">
-          <Forgot />
-        </Route>
-        <Route exact path="/register">
-          <Register />
-        </Route>
-        <Route path="*">
-          <NotFound />
-        </Route>
+        <Route exact path="/" name="Home" render={props => <Home {...props} />} />
+        <Route exact path="/login" name="Login" render={props => <Login {...props} />} />
+        <Route exact path="/forgot" name="Forget" render={props => <Forgot {...props} />} />          
+        <Route exact path="/register" name="Register" render={props => <Register {...props} />} />
+        <Route path="*" name="NotFound" render={props => <NotFound {...props} />} />  
       </Switch>
     </Router>
   );

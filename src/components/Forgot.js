@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 import useClass from './../hooks/add-class-body';
 import {
@@ -13,7 +14,7 @@ import {
   Row,
 } from "reactstrap";
 
-const Forgot = () => {
+const Forgot = (props) => {
     useClass('bg-blue')
     const handleSendEmail = () => {
         console.log('Make http request here....')

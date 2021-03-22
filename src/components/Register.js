@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 import useClass from "./../hooks/add-class-body";
 
@@ -14,7 +15,7 @@ import {
   Row,
 } from "reactstrap";
 
-const Register = () => {
+const Register = (props) => {
   useClass("bg-blue");
   const handleRegister = () => {
     console.log("Make http request here....");
