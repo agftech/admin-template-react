@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { useToasts } from 'react-toast-notifications';
 
 import { 
     Row,
@@ -16,9 +17,11 @@ import {
 
 export default function Forms() {
     const { handleSubmit, errors, register } = useForm();
+    const { addToast } = useToasts();
   
     function onSubmit(data) {
         console.log(data);
+        addToast('My toast', { appearance: '#36B37E', autoDismiss: true });
     }
 
     return (
@@ -37,7 +40,7 @@ export default function Forms() {
                                     {errors.name && <span className="text-danger">Is required</span>}
                                 </FormGroup>
                                 <FormGroup>
-                                    <Button type="submit">Submit</Button>
+                                    <Button type="submit">Submit</Button>                            
                                 </FormGroup>
                             </form>
                         </CardBody>

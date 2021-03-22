@@ -19,7 +19,7 @@ export default function Sidebar(props) {
           Home
         </a>
         {Templates.map((template, index) => (
-          <a href={template.path} className="list-group-item">
+          <a href={template.path} key={index} className="list-group-item">
             {template.name}
           </a>
         ))}
