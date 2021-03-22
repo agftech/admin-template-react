@@ -18,7 +18,9 @@ body {
   height: 100%;
   min-height: 100%;
   background: #f9f9f9;
-  border-right: 1px solid #eeeeee; }
+  margin-left: -15em;
+  border-right: 1px solid #eeeeee;
+  transition: margin .25s ease-in-out; }
   #sidebar .sidebar-title h2 {
     padding: 0.8em;
     font-size: 1.1em; }
@@ -33,6 +35,9 @@ body {
   width: 100%; }
   #content-wrapper .content-dynamic {
     padding: 1em; }
+
+#main-wrapper.toggled #sidebar {
+  margin-left: 0; }
 
 /** EXTERNAL PAGES **/
 body.bg-blue {
