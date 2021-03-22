@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+    Nav,
     Navbar,
     NavbarBrand,
     NavbarToggler
@@ -18,7 +19,9 @@ export default function Header(props) {
                 <NavbarBrand href="/">
                     <img src="https://via.placeholder.com/150x50" alt=""/>
                 </NavbarBrand>
-                <NavbarToggler onClick={handleClickToSidebar} />
+                <Nav className="mr-auto" navbar>
+                    <NavbarToggler onClick={handleClickToSidebar} />
+                </Nav>  
             </Navbar>
         </header>
     );
