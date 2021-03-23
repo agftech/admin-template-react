@@ -12,6 +12,7 @@
     "bootstrap": "^4.6.0",
     "react": "^17.0.1",
     "react-bodymovin": "^2.0.0",
+    "react-chartjs-2": "^2.11.1",
     "react-dom": "^17.0.1",
     "react-hook-form": "^6.15.5",
     "react-router-dom": "^5.2.0",
