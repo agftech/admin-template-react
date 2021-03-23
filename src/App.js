@@ -23,7 +23,7 @@ function App() {
           <Route
             exact
             path="/forgot"
-            name="Forget"
+            name="Forgot"
             render={(props) => <Forgot {...props} />}
           />
           <Route
@@ -32,16 +32,17 @@ function App() {
             name="Register"
             render={(props) => <Register {...props} />}
           />
+          <Route  
+            exact  
+            path="/404"
+            name="NotFound"
+            render={(props) => <NotFound {...props} />}
+          />              
           <Route
             path="/"
             name="AppLayout"
             render={(props) => <AppLayout {...props} />}
-          />
-          <Route
-            path="*"
-            name="NotFound"
-            render={(props) => <NotFound {...props} />}
-          />
+          />                
         </ToastProvider>
       </Switch>
     </Router>
